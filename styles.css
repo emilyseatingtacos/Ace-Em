@@ -1,0 +1,138 @@
+:root {
+  color-scheme: dark;
+  --bg-1: #1d1335;
+  --bg-2: #0f0a20;
+  --accent: #8f7dff;
+  --accent-2: #00d2ff;
+  --text: #f4f3ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #2f1f55 0%, var(--bg-1) 35%, var(--bg-2) 100%);
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+
+.app {
+  width: min(680px, 100%);
+  text-align: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+h1 {
+  margin: 0.25rem 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.tagline {
+  margin-top: 0;
+  opacity: 0.95;
+}
+
+.question-panel {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 1.2rem;
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.2rem 0 1.8rem;
+  backdrop-filter: blur(6px);
+}
+
+label {
+  text-align: left;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+  padding: 0.85rem 0.95rem;
+  font-size: 1rem;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.8rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0c0830;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  transform: translateY(2px) scale(0.98);
+}
+
+.ball-panel {
+  display: grid;
+  place-items: center;
+}
+
+.ball {
+  width: min(78vw, 380px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 24%, #4b3f86 0%, #0f0c1f 52%, #05040a 100%);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12), 0 20px 45px rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 1.8rem;
+}
+
+.answer {
+  width: 72%;
+  aspect-ratio: 1;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(31, 29, 58, 0.9), rgba(19, 18, 38, 0.95));
+  border: 1px solid rgba(158, 144, 255, 0.35);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.shake {
+  animation: shake 0.55s ease;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(2.5deg) scale(1.01); }
+  50% { transform: rotate(-2.5deg) scale(1.02); }
+  75% { transform: rotate(2deg) scale(1.01); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+footer {
+  margin-top: 1rem;
+  opacity: 0.88;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S8TO Ball 🎱</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">Houdini the Rescue Oracle</p>
+        <h1>🎱 S8TO Ball</h1>
+        <p class="tagline">“I know things… but I may or may not tell you.” 😆</p>
+      </header>
+
+      <section class="question-panel">
+        <label for="question">Ask any yes/no question</label>
+        <input
+          id="question"
+          type="text"
+          placeholder="Ask anything in yes/no format (e.g., Should I adopt another dog?)"
+        />
+        <button id="askBtn" type="button">Shake the S8TO Ball</button>
+      </section>
+
+      <section class="ball-panel" aria-live="polite">
+        <div class="ball" id="ball" role="img" aria-label="Magic ball with answer">
+          <div class="answer" id="answerText">Ask your question first, human.</div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Adopt, don’t shop. 🐾</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

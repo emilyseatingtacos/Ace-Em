@@ -1,38 +1,24 @@
 const responseBank = {
-  yesEnergy: [
-    "Yeah, sure. After snacks.",
-    "Probably. If it benefits me.",
-    "Yes. But I expect cheese.",
-    "Fine. But I’m judging you.",
-    "Proceed. I’ll supervise."
+  yes: [
+    "Yes — yeah, sure. After snacks.",
+    "Yes — probably, if it benefits me.",
+    "Yes — but I expect cheese.",
+    "Yes — proceed. I’ll supervise.",
+    "Yes — fine, but I’m judging you."
   ],
-  noEnergy: [
-    "Absolutely not.",
-    "That’s a terrible idea.",
-    "Did you even think this through?",
-    "No. Go sit in the corner.",
-    "Ask again after treats."
+  no: [
+    "No — absolutely not.",
+    "No — that’s a terrible idea.",
+    "No — did you even think this through?",
+    "No — go sit in the corner.",
+    "No — ask again after treats."
   ],
-  chaotic: [
-    "Only if we escape the yard again.",
-    "Maybe. Depends on squirrels.",
-    "The spirits say… nap first.",
-    "Your question lacks peanut butter.",
-    "Unclear. Need belly rubs to continue."
-  ],
-  wisdom: [
-    "Trust the one with snacks.",
-    "Love is real. So are treats.",
-    "Walk first. Decisions later.",
-    "Adopt, don’t overthink.",
-    "You’re overcomplicating it."
-  ],
-  houdiniEnergy: [
-    "I escaped worse situations than this.",
-    "I survived Puerto Rico streets. You’ll survive this.",
-    "Confidence level: Shar-Pei wrinkle.",
-    "The answer is outside. Let’s go.",
-    "You are not the alpha here."
+  maybe: [
+    "Maybe — depends on squirrels.",
+    "Maybe — the spirits say nap first.",
+    "Maybe — your question lacks peanut butter.",
+    "Maybe — unclear, need belly rubs to continue.",
+    "Maybe — walk first, decisions later."
   ]
 };
 
@@ -51,7 +37,7 @@ function askS8TOBall() {
   const question = questionInput.value.trim();
 
   if (!question) {
-    answerText.textContent = "Ask a real question first, human.";
+    answerText.textContent = "Ask any yes/no question first, human.";
     return;
   }
 

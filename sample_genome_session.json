@@ -1,0 +1,75 @@
+[
+  {
+    "simulation_name": "EmilyHub Dashboard - Morning Session Simulation",
+    "timestamp": "2026-04-09T08:30:00Z",
+    "user_profile": {
+      "name": "Emily",
+      "data_source": "genome_Emily_RidyardSummers_v5_Full_20260324000656.txt",
+      "records_loaded": 631455
+    },
+    "view_1_morning_briefing": {
+      "status": "Active",
+      "chicago_news_mock": [
+        {
+          "title": "New Green Line Station Improvements Announced",
+          "source": "Block Club Chicago",
+          "relevance": "Local Infrastructure"
+        },
+        {
+          "title": "Chicago Spring Flower Show Opens at Garfield Park",
+          "source": "WTTW",
+          "relevance": "Local Interests"
+        }
+      ],
+      "veterinary_news_mock": [
+        {
+          "title": "Advancements in Canine Gene Therapy for Hip Dysplasia",
+          "source": "AVMA News",
+          "relevance": "Professional Interest"
+        },
+        {
+          "title": "Study Finds New Links in Feline Hyperthyroidism Genetics",
+          "source": "ScienceDaily",
+          "relevance": "Genetics/Veterinary"
+        }
+      ]
+    },
+    "view_2_genomic_library_simulation": {
+      "summary_stats": {
+        "chromosome_1": "52,431",
+        "chromosome_x": "18,290",
+        "mitochondrial": "32",
+        "missing_calls": "15,210"
+      },
+      "active_search_simulation": {
+        "query": "rs4680",
+        "result": {
+          "rsid": "rs4680",
+          "chromosome": "22",
+          "position": "19951271",
+          "genotype": "AG",
+          "allele1": "A",
+          "allele2": "G",
+          "biological_context": "COMT Gene (Catechol-O-methyltransferase). This variant influences dopamine breakdown in the prefrontal cortex."
+        }
+      },
+      "random_discovery_simulation": {
+        "rsid": "rs1800497",
+        "chromosome": "11",
+        "position": "113222668",
+        "genotype": "TT",
+        "annotation_preview": "Associated with ANKK1/DRD2; explored in studies on dopamine receptor density and reward behavior."
+      }
+    },
+    "view_3_personal_journal_entry": {
+      "date": "2026-04-09",
+      "auto_prompt": "You discovered rs4680 today. How does your coffee intake feel relative to your intermediate dopamine processing genotype?",
+      "user_note_placeholder": "Interesting connection between the vet news on gene therapy and my COMT variant."
+    },
+    "system_health": {
+      "database_connection": "Local (SQLite)",
+      "privacy_mode": "Encryption Active",
+      "server_location": "localhost:8501"
+    }
+  }
+]
